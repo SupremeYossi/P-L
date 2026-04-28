@@ -33,7 +33,7 @@ export function DashboardShell({ children }: { children: ReactNode }) {
             return (
               <Link
                 key={item.href}
-                href={item.href}
+                href={item.href as any}
                 className="flex h-10 shrink-0 items-center gap-3 rounded px-3 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-ink"
               >
                 <Icon size={18} aria-hidden="true" />
